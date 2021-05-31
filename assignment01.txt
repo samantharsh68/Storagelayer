@@ -1,0 +1,28 @@
+CREATE DATABASE assignment01;
+---------------------------------
+USE DATABASE assignment01
+------------------------------------
+CREATE TABLE TABLE1
+(
+MEMBERSHIPID INT NOT NULL,
+FULLNAME VARCHAR(50),
+PHISICALADDRESS VARCHAR(50),
+SALUTATION VARCHAR(10)
+) ;
+---------------------------------------------------------------------------
+INSERT INTO TABLE1 VALUES(1,'Janet Jones', 'First Street Plot No 4', 'Mr');
+INSERT INTO TABLE1 VALUES(2,'Robert Phil', '3rd Street 34', 'Mr');
+INSERT INTO TABLE1 VALUES(3,'Robert Phil', '5th Avenue', 'Mr');
+-------------------------------------------------------------------------------
+ALTER TABLE TABLE1 ADD CONSTRAINT PK PRIMARY KEY(MEMBERID);
+------------------------------------------------------------------------------
+CREATE TABLE TABLE2
+(
+MEMBERSHIPID INT,
+MOVIERENTED VARCHAR(30)
+);
+-------------------------------------------------------------------------------
+INSERT INTO TABLE1 VALUES(1, 'Pirates of the Caribbean');
+INSERT INTO TABLE1 VALUES(2, 'Clash of the Titans');
+INSERT INTO TABLE1 VALUES(3, 'Forgeting Sarah Marshal');-
+----------------------------------------------------------------------------------
